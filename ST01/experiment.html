@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration </title>
+</head>
+<body>
+    
+    <header><h1 align="center"><big> Student Registration Form </big></h1></header>
+<hr>
+ <div>
+            <label for="studentName">Full Name:</label>           <input type="text" id="studentName" name="studentName" required><br><br>
+
+            <label for="dob">Date of Birth:</label> 
+            
+                                      <br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+             <label for="male">Male</label><br>
+                             <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+                 <label for="address">Address:</label><br>
+                             <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="grade">Class:</label><br>
+            <select id="grade" name="grade">
+                <option value="kindergarten">KG</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+            </select><br><br>
+        
+
+       
+            <legend>Parent/Guardian Information</legend>
+            <br>
+            <label for="parentName">Full Name:</label>
+            <input type="text" id="parentName" name="parentName" required><br><br>
+
+            <label for="parentEmail">Email:</label>
+            <input type="email" id="parentEmail" name="parentEmail" required><br><br>
+
+            <label for="parentPhone">Phone Number:</label>
+            <input type="tel" id="parentPhone" name="parentPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+91 0123456789" required><br><br>
+        </fieldset>
+        <hr>
+        <input type="submit" value="Register">
+        </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Room Booking Form</title>
+</head>
+<body>
+<header align="center"><h1> <big>Hotel Room Booking Form</big></h1>
+
+<form>
+  
+  <p>
+    <label for="fullName"> Full Name:</label>
+    <input type="text" id="fullName" name="fullName">
+  </p>
+
+  <p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </p>
+
+  <p>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+  </p>
+
+  <p>
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate" name="checkInDate" value="dd-mm-yyyy">
+  </p>
+
+  <p>
+    <label for="checkOutDate">Check-out Date:</label>
+    <input type="date" id="checkOutDate" name="checkOutDate" value="dd-mm-yyyy">
+  </p>
+
+  <p>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" name="roomType">
+      <option value="single_room" selected>Single Room</option>
+      <option value="double_room">Double Room</option>
+      <option value="suite">Suite</option>
+      <option value="family_room">Family Room</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="numGuests">Number of Guests:</label>
+    <input type="number" id="numGuests" name="numGuests" min="1" value="1">
+  </p>
+
+  <p>
+    <label for="specialRequests">Special Requests:</label>
+    <br>
+    <textarea id="specialRequests" name="specialRequests" rows="5" cols="50"></textarea>
+  </p>
+
+  <p>
+    <input type="submit" value="Book Now">
+    <input type="reset" value="Reset Form">
+  </p>
+
+</form>
+</header>
+
+</body>
+</html>
