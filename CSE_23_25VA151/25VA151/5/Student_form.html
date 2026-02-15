@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1 align="center"><big>Student Registration Form</big></h1>
+    <hr>
+    <form method="post" action="#" class="form-container">
+
+        <p>
+            <label for="full-name" >Full Name:</label>
+            <input type="text" id="full-name" name="fullName"  placeholder="Enter your full name"  size="35"  required  > 
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"   placeholder="Enter valid email address" size="35" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" 
+                        placeholder="Enter password" 
+                        size="35"
+                        required>
+        </p>
+
+        <p>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked> 
+            <label for="male" style="width: auto;">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female"> 
+            <label for="female" style="width: auto;">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other"> 
+            <label for="other" style="width: auto;">Other</label>
+        </p>
+
+        <p>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>-- Select Course --</option>
+                <option value="cs">Computer Science</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="me">Mechanical Engineering</option>
+                <option value="ba">Business Administration</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="contact-no">Contact No:</label>
+            <input type="tel" id="contact-no" name="contactNo" 
+                        placeholder="Enter phone number" 
+                        pattern="[0-9]{10}" 
+                        title="A 10-digit phone number is required."
+                        size="35"
+                        required>
+        </p>
+
+        <p>
+            <label for="address" style="vertical-align: top;">Address:</label>
+            <textarea id="address" name="address" 
+                        placeholder="Enter your address" 
+                        cols="35" rows="5"
+                        required></textarea>
+        </p>
+
+        <p >
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </p>
+        <hr>
+    </form>
+    
+    <p style="text-align: center;">
+        <small>&copy; 2025 Student Registration Portal</small>
+    </p>
+
+</body>
+</html>

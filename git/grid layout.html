@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Responsive Product Grid</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: Arial, sans-serif; padding: 20px; background: #f2f2f2;}
+    h1 {text-align: center; margin-bottom: 20px;}
+    .grid {display: grid;gap: 15px;grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));}
+    .card {background: white;padding: 15px;border-radius: 10px;
+  text-align: center;}
+    .card img {width: 100%;height: 140px;object-fit: contain;margin-bottom: 10px;}
+    .title {font-size: 16px; font-weight: bold; margin-bottom: 5px;}
+    .price {color: green; font-weight: bold; margin-bottom: 10px;}
+    button {padding: 8px 14px;border: none;background: #007bff;color: white;
+    border-radius: 5px;cursor: pointer;}
+    @media (max-width: 480px) {
+    .grid {grid-template-columns: 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Product Grid</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="mobile.avif" alt="Mobile" />
+      <div class="title">Mobile Phone</div>
+      <div class="price">Rs. 15,999</div>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="earphones.jpg" alt="Earphones" />
+      <div class="title">Earphones</div>
+      <div class="price">Rs. 2,449</div>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="smartwatch.jpg" alt="Smartwatch" />
+      <div class="title">Smartwatch</div>
+      <div class="price">Rs. 5,999</div>
+      <button>Buy Now</button>
+    </div>
+    <div class="card">
+      <img src="laptop.avif" alt="Laptop" />
+      <div class="title">Laptop</div>
+      <div class="price">Rs. 55,999</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
